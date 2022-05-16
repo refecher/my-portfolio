@@ -13,7 +13,7 @@
 
 <p align="center">This is a personal project to organize my personal and professional info. Here, you can find out more about my resume and portfolio. </p>
 
-<p align="center">Access <a href="#">here</a> my portfolio.</p><br>
+<p align="center">Access <a href="https://refecher.herokuapp.com/">here</a> my portfolio.</p><br>
 
 <!--Bottom session-->
-<br><h4 align="center">Made with ❤️ by <a href="#">Renata Fecher</a></h4>
+<br><h4 align="center">Made with ❤️ by <a href="https://refecher.herokuapp.com/">Renata Fecher</a></h4>
