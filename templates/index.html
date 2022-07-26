@@ -16,6 +16,8 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="static/css/styles.css" rel="stylesheet" />
         <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=sql&amp;skin=desert"></script>
+        <!--Mathjax-->
+        <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -98,7 +100,7 @@
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Space Race</div>
-                                <div class="portfolio-caption-subheading text-muted">Data Analysis (Python)</div>
+                                <div class="portfolio-caption-subheading text-muted">Data Analysis / Web Scrapping</div>
                             </div>
                         </div>
                     </div>
@@ -169,11 +171,11 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="static/assets/img/portfolio/under-construction.jpg" alt="..." />
+                                <img class="img-fluid" src="static/assets/img/portfolio/machine-learning.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">TBD</div>
-                                <div class="portfolio-caption-subheading text-muted">TBD</div>
+                                <div class="portfolio-caption-heading">Linear Regression in Python</div>
+                                <div class="portfolio-caption-subheading text-muted">Data Analysis (Scikit-Learn)</div>
                             </div>
                         </div>
                     </div>
@@ -319,33 +321,34 @@
                                     <p>The dataset contains a total of 6315 rows and 7 columns with no duplicated values and 3990 Null values in the "price column". To start, I cleaned up the data by adding some additional columns (such as "country" and "year") and converting some columns to its respective types (i.e. the "date" column was converted to a datetime object).</p>
                                     <br><hr><br>
                                     <h4 class="subheading">Dataset Overview</h4>
-                                    <iframe scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~refecher/28.embed" height="650" width="100%"></iframe>
+<!--                                    <iframe scrolling="no" src="https://plotly.com/~refecher/28.embed?autosize=true&link=false" height="650" width="100%" frameborder="0"></iframe>-->
+                                    <iframe scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~refecher/28.embed?autosize=true&link=false" height="650" width="100%"></iframe>
                                     <p>The graph above represent the number of launches per year from 1957 to 2022. As we can see, 2020, 1967 and 1966 are the years with the highest number of rockets launched with 157, 140, and 136 total of launches, respectively.</p>
-                                    <iframe scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~refecher/31.embed" height="650" width="100%"></iframe>
+                                    <iframe scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~refecher/31.embed?autosize=true&link=false" height="650" width="100%"></iframe>
                                     <p>This graph represents the number of launches per country over the years. Russian Federation and the USA are the countries with the biggest number of rockets launched since 1957.</p>
-                                    <iframe scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~refecher/33.embed" height="650" width="100%"></iframe>
+                                    <iframe scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~refecher/33.embed?autosize=true&link=false" height="650" width="100%"></iframe>
                                     <p>The organisation with the biggest number of rockets launched is the RVSN USSR. This organisation was created as a part of the Soviet Armed Forces in 1959. After the Soviet Union collapsed in 1991, their launches are attributed to Russian Federation and Kazakhstan.</p>
                                     <br><hr><br>
                                     <h4 class="subheading">Distribution of the Status of Missions and Rockets</h4>
-                                    <iframe scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~refecher/35.embed" height="650" width="100%"></iframe>
+                                    <iframe scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~refecher/35.embed?autosize=true&link=false" height="650" width="100%"></iframe>
                                     <p>Analyzing the graph above, we see that more than 80% of the rockets launched have been retired. The reasons why a rocket is retired are diverse, for example, some of them were not profitable.</p>
-                                    <iframe scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~refecher/37.embed" height="650" width="100%"></iframe>
+                                    <iframe scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~refecher/37.embed?autosize=true&link=false" height="650" width="100%"></iframe>
                                     <p>When it comes to the success of a mission, we have that more than 90% of all the missions are successful.</p>
                                     <br><hr><br>
                                     <h4 class="subheading">Map of Launches by Country</h4>
                                     <p>To plot the graph, I created a column with all the Alpha codes for every country. The launches made by Sea Launch weren't attributed to any country (and they are not shown in the map) because Sea Launch is a consortium of four companies from Norway, Russia, Ukraine and the United States. It was formed to launch the Zenit family of rockets from the Odyssey floating launch platform located in the Pacific Ocean.</p>
-                                    <iframe scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~refecher/39.embed" height="650" width="100%"></iframe>
+                                    <iframe scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~refecher/39.embed?autosize=true&link=false" height="650" width="100%"></iframe>
                                     <p>With this type of visualization, we can have a clear understanding of the launches by country. Here, we can infer that the USA and Russia led the space race throughout those years.</p>
-                                    <iframe scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~refecher/41.embed" height="650" width="100%"></iframe>
+                                    <iframe scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~refecher/41.embed?autosize=true&link=false" height="650" width="100%"></iframe>
                                     <p>The USA and Russia were the countries with the biggest number of launches, and also the countries with the biggest number of failures by mission.</p>
                                     <br><hr><br>
                                     <h4 class="subheading">Comparison between the USA and Russia</h4>
                                     <p>Now that we know that the USA and Russia were the countries that had the biggest number of missions launched, I decided to analyse which one of them had the most success and failure rates. For that, I created a new dataframe containing the successes and failures in percents for both of the countries.</p>
-                                    <iframe scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~refecher/43.embed" height="420" width="100%"></iframe>
+                                    <iframe scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~refecher/43.embed?autosize=true&link=false" height="420" width="100%"></iframe>
                                     <p>With this analysis, we observe that, even if the USA is the number 1 in total of launches, Russia has more succeeded missions than the USA.</p>
                                     <br><hr><br>
                                     <h4 class="subheading">Summary of the Missions Analyses by Countries and Organisations</h4>
-                                    <iframe scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~refecher/45.embed" height="650" width="100%"></iframe>
+                                    <iframe scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~refecher/45.embed?autosize=true&link=false" height="650" width="100%"></iframe>
                                     <p>A sunburst chart is a great way to analyse hierarchical data. It consists of concentric layers of circles. The chart segments have each one data category.</p>
                                     <p>Since the beginning of the space exploration in 1957, the space has been an aspect of competition between developed nations. The competition began in earnest on August 2, 1955, when the Soviet Union responded to the American announcement four days earlier of intent to launch artificial satellites for the International Geophysical Year, by declaring they would also launch a satellite "in the near future". The Space Race brought pioneering launches of artificial satellites, robotic space probes to the Moon, Venus, and Mars, and human spaceflight in low Earth orbit and ultimately to the Moon.</p>
                                     <p>As time went by, other nations, such as China, France and Japan, started their own space missions, but still nothing compared with the USA, Russia and Kazakhstan (being the last 2 former parts of the Soviet Union). Prominent space organisations are RVSN USSR, Roscosmos and VKS RF for Russia and Kazakhstan; US Air Force, General Dynamics and NASA for the USA; CASC for China; and Arianespace for France.</p>
@@ -356,7 +359,7 @@
                                         </li>
                                         <li>
                                             <strong>Category:</strong>
-                                            Data Analysis
+                                            Data Analysis, Pandas, Plotly, Selenium, Python
                                         </li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
@@ -389,8 +392,8 @@
                                     <h4 class="subheading">SQL Code and Tableau Visualizations</h4>
                                     <p>In this analysis, I made interactive dashboards for data visualization and understanding of the COVID-19 from its beginning in 2020. The dataset used throughout the analysis was downloaded from <a href="https://ourworldindata.org/coronavirus">Our World in Data</a>.  For demonstration purposes, the CSV file downloaded was divided in 2, CovidDeaths and CovidVaccinations. </p>
                                     <p>The dataset contains 67 columns and 192,553 rows. To start with the EDA, instead of casting some columns that were as strings instead of numbers, since I'm going to be using them a lot, I decided to simply convert them. To show the column data as an integer without altering the entire column, I could CAST or CONVERT: </p>
-                                    <p><pre class="prettyprint">CAST(column_name AS INT)
-CONVERT(INT, column_name)</pre></p>
+                                    <pre class="prettyprint">CAST(column_name AS INT)
+CONVERT(INT, column_name)</pre>
                                     <p>I analyzed the data by dividing it into Countries, World and Continents. When looking at the country data, I checked the daily count of deaths and cases per country, and only for the USA and Brazil. The purpose of that was to check out when the cases of COVID started in each country, as well as the deaths because of COVID. I also analyzed the percent of population infected by country and how this number increased daily. </p>
                                     <p>When calculating the countries with the highest infection rate, I noticed that the top 3 countries had a small population (less than 100,000 people). The USA is the number 1 in total of cases, but it's in 54th when it comes to the infection rate. When it comes to the death count, the top3 countries are also countries with a big population, like the USA, Brazil and India.</p>
                                     <p>For the hospitalized patients, many countries had zero or very inconsistent data, but for with the data we had, the USA is also the number one. Brazil for example, has a massive total case and death count, but there's almost no report of hospitalized cases. The highest reproduction rate was given to South Korea</p>
@@ -507,7 +510,8 @@ CONVERT(INT, column_name)</pre></p>
                                     <br><hr><br>
                                     <h4 class="subheading">Beer Dataset</h4>
                                     <p>This dataset was downloaded from <a href="https://www.kaggle.com/datasets/rdoume/beerreviews">Kaggle</a> and contains 13 columns and +1.65 million rows. Due to its size, I opened the PowerShell on my computer and used the following code to divide it in 16 Excel files that I could upload to SQL Server: </p>
-                                    <p><pre class="prettyprint"># Read parent CSV
+                                    <pre class="prettyprint">
+# Read parent CSV
 $InputFilename = Get-Content 'C:\Users\Zach7\Documents\Renata\Portfolio Projects\Beer Project\beer_reviews.csv'
 $OutputFilenamePattern = 'output_file_'
 $LineLimit = 100000
@@ -534,17 +538,18 @@ Write-Host "$Filename"
 # Increment counters
 $i++;
 $line++
-}</pre></p>
+}
+                                    </pre>
                                     <p>After uploading all files into SQL Server, I checked if the columns had the same format and altered the ones that weren't in the right format. Then, I created one table and populated it with the result of the UNION ALL command applied for all 16 files. </p>
-                                    <p><img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/2.png" alt="..." /></p>
+                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/2.png" alt="..." />
                                     <p>I started the cleaning process by checking for NULL values. In this process, I found out that only 2 columns had NULL values, the brewery_name and the beer_abv.</p>
-                                    <p><img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/1.png" alt="..." /></p>
+                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/1.png" alt="..." />
                                     <p>To fill in the missing values for the brewery_name column, I first check if there was any brewery with the same ID as the missing ones that had a name, if yes, then I could safely assume that the missing value could be filled by the same as the brewery name with the same ID, given the fact that each brewery has its own ID. It wasn't the case for any of the breweries that had a missing name, so I decided to Google the name of the beers and, with that, I found out the brewery that makes them and could fill in the gap.</p>
-                                    <p><img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/3.png" alt="..." /></p>
+                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/3.png" alt="..." />
                                     <p>The beer_abv column had over 4% of NULL values. To fix that, I decided to fill in the missing values with the average of the alcohol by volume (abv) for that beer style. To do that, I made an INNER JOIN with the same table.</p>
-                                    <p><img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/4.png" alt="..." /></p>
+                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/4.png" alt="..." />
                                     <p>Most brews (if not all of them) were reviewed many times by different people. To make the data more useful, I decided to aggregate the data by getting the average scores of each brew and not taking into consideration the profiles that reviewed the brews.</p>
-                                    <p><img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/5.png" alt="..." /></p>
+                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/5.png" alt="..." />
                                     <P>This process resulted in a much smaller table (less than 66 thousand of rows), with data ready to be explored and analyzed. Check out the complete project <a href="https://github.com/refecher/DataCleaning/blob/main/BeerProject.sql">here.</a> </P>
                                     <ul class="list-inline">
                                         <li>
@@ -614,10 +619,30 @@ $line++
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/work-in-progress.jpg" alt="..." />
-                                    <p>Come back later to check out what we have prepared for you!</p>
+                                    <h2 class="text-uppercase">Python Projects</h2>
+                                    <p class="item-intro text-muted">In this section, I decided to showcase some Python Projects I've made.</p>
+                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/Python.jpg" alt="..." />
+                                    <p>In the beginning of my studies to become a data analyst I realized I needed to know a programming language. After some tryings, I decided to learn Python and fell in love with this programming language because it's easy to learn and very powerful.</p>
+                                    <p>Python is a high-level, general-purpose and a very popular programming language. Python programming language (latest Python 3) is being used in web development, Machine Learning applications, along with all cutting edge technology in Software Industry.</p>
+                                    <p>Below you will see just a bit of what I can do in Python, there's much more to come.</p>
+                                    <br><hr><br>
+                                    <h4 class="subheading">Tic-tac-toe Game</h4>
+                                    <p>For this project, I decided to code my own version of the game tic-tac-toe using Python.</p>
+                                    <p>Tic-tac-toe is a two-player game, that is played on a 3×3 square grid. Each player occupies a cell in turns, with the objective of placing three marks in a horizontal, vertical, or diagonal pattern. One player uses cross 'X' as his marker, while the other uses a naught 'O'.</p>
+                                    <p>The game is playable in the command line, and you can choose to play against the computer or with a friend, where one person is "X" and the other plays "O".</p>
+                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/tic-tac-toe.png" alt="..." />
+                                    <p>Check out the project on my <a href="https://github.com/refecher/tic-tac-toe">Github webpage</a>.</p>
+                                    <br><hr><br>
+                                    <h4 class="subheading">Typing Speed Test (GUI APP)</h4>
+                                    <p>Using Tkinter in Python, this project builds a desktop app that assesses your typing speed.</p>
+                                    <p>The test starts only when you start typing, and it ends when you complete the entire text. If you type some character wrong, the text will change its color to signal that a typo has occurred. When you fix the mistake, it will go back to its original color. By the end of the test, you will know ho many characters and words per minute you can type, as well as your accuracy.</p>
+                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/type-speed.png" alt="..." />
+                                    <p>Feel free to head out to my <a href="https://github.com/refecher/typeSpeedProject">Github page</a> and check the code for this project.</p>
+                                    <br><hr><br>
+                                    <h4 class="subheading">Breakout Game</h4>
+                                    <p>Breakout was a hit game originally coded up by Steve Wozniak before he and Jobs started Apple. It's a simple game that is similar to Pong where you use a ball and paddle to break down a wall.</p>
+                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/breakout-game.png" alt="..." />
+                                    <p>You can see the code used to implement this game <a href="https://github.com/refecher/tic-tac-toe">here.</a></p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Client:</strong>
@@ -625,7 +650,7 @@ $line++
                                         </li>
                                         <li>
                                             <strong>Category:</strong>
-                                            Python
+                                            Python, Tkinter
                                         </li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
@@ -649,18 +674,349 @@ $line++
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/work-in-progress.jpg" alt="..." />
-                                    <p>Come back later to check out what we have prepared for you!</p>
+                                    <h2 class="text-uppercase">Linear Regression in Python</h2>
+                                    <p class="item-intro text-muted">How are people's earnings determined? Today I will build a model for predicting people's earnings, analyse the model and try to improve it.</p>
+                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/machine-learning.jpg" alt="..." />
+                                    <p>According to <a href="https://www.geeksforgeeks.org/ml-classification-vs-regression/">GeeksforGeeks</a>, Classification and Regression are two major prediction problems that are usually dealt with in Data mining and machine learning.</p>
+                                    <p>Classification is the process of finding or discovering a model or function which helps in separating the data into multiple categorical classes i.e. discrete values. In classification, data is categorized under different labels according to some parameters given in input and then the labels are predicted for the data. The classification process deal with the problems where the data can be divided into binary or multiple discrete labels. </p>
+                                    <p>Regression is the process of finding a model or function for distinguishing the data into continuous real values instead of using classes or discrete values. It can also identify the distribution movement depending on the historical data. Because a regression predictive model predicts a quantity, therefore, the skill of the model must be reported as an error in those predictions </p>
+                                    <br><hr><br>
+                                    <h4 class="subheading">Dataset Introduction</h4>
+                                    <p>The National Longitudinal Survey of Youth 1997– is a panel survey with repeated interviews of a nationally representative sample of young men and women aged 12 to 18 in 1997 in the United States. Interviews for the NLSY97 were conducted annually from 1997 to 2011 and biennially since then. The core sample originally consisted of 3,459 males and 3,289 females. For this assignment, I have included only a subset of the data.</p>
+                                    <p>This Survey allows scientists to look at the determinants of earnings as well as educational attainment and has incredible relevance for government policy. It can also shed light on politically sensitive issues like how different educational attainment and salaries are for people of different ethnicity, sex, and other factors. When we have a better understanding how these variables affect education and earnings we can also formulate more suitable government policies.</p>
+                                    <br><hr><br>
+                                    <h4 class="subheading">Preliminary Data Exploration</h4>
+                                    <p>I started this project by upgrading the Plotly library and importing Pandas, Numpy, Seaborn, Matplotlib, and Sklearn. After that, I formatted Pandas options to display tables with only 2 decimal numbers and loaded the data.</p>
+                                    <p>The dataset has 96 columns and 2,000 rows, with datatype being either float or integer. The columns are named with acronyms and to better understand what each value means, I also loaded the Names and Descriptions CSV file and took a look at it. In this step, I had to turn off the pandas option that only shows that first and last 5 rows of the dataset.</p>
+                                    <pre class="prettyprint">
+# Upgrade plotly
+%pip install --upgrade plotly
+
+# Imports
+import pandas as pd
+import numpy as np
+
+import seaborn as sns
+import plotly.express as px
+import matplotlib.pyplot as plt
+import plotly.graph_objects as go
+
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_absolute_error, mean_squared_error
+from sklearn.model_selection import train_test_split
+
+# Format table
+pd.options.display.float_format = '{:,.2f}'.format
+
+# Load data
+df_data = pd.read_csv('NLSY97_subset.csv')
+
+# Load Names and Description data
+pd.set_option('display.max_rows', None)
+df_names = pd.read_csv('NLSY97_Variable_Names_and_Descriptions.csv')
+pd.reset_option('^display.', silent=True)
+
+#Preliminary data exploration
+df_data.info()
+                                    </pre>
+                                    <p>My initial question was whether we'd get paid more if we'd spend more years in school, if I have had more work experience and/or if my household income was higher (so we could go to better schools). In essence, I am asking for the relationship between EARNINGS (hourly earnings in $ in 2011), S (years of schooling), EXP (total out-of-school work experience), and HHINC97 (gross household income prior to 1997).</p>
+                                    <br><hr><br>
+                                    <h4 class="subheading">Data Cleaning</h4>
+                                    <p>For the data cleaning process, I first started by figuring out if there's any NaN values and duplicate rows. I dropped the duplicate rows, and calculated the percentage of missing data after that.</p>
+                                    <p>For the columns related to the Parental Monitoring and Parental Style in 1997, we had more than 25% of missing data in each column. When analyzing the data, taking as an example the columns PRMONM (monitoring by mother) and PRMONF (monitoring by father) - both related to Parental Monitoring - I realized that, for most cases, when there's data missing in one column, the other one is filled. One reason for it may be for kids raised for single parents, where there's no other parent to monitor the youth. Given that, I thought about filling the missing data with 0, but I decided to just drop those columns because I didn't want to use them in the project.</p>
+                                    <p>The column HHINC97 (Gross Household Income in 1997) had around 19% of missing data. At first, I was going to fill the NaN values with the average of the column, but I decided to fill it with the median household income in 1997 which is $37,005. </p>
+                                    <pre class="prettyprint">
+print(f'Any NaN values? {df_data.isna().values.any()}')
+print(f'Any duplicates? {df_data.duplicated().values.any()}')
+
+# Remove Duplicates
+df_data = df_data.drop_duplicates()
+
+#Pct of missing data by column (show only the ones that have missing data)
+for col in df_data.columns:
+  pct_missing = np.mean(df_data[col].isnull())*100
+  if pct_missing > 0:
+    print('{} - {:.2f}%'.format(col, pct_missing))
+
+# Drop Columns
+df_data.drop(df_data.columns[32:42], axis=1, inplace=True)
+
+# Fill NaN values
+df_data['HHINC97'] = df_data['HHINC97'].fillna(37005)
+                                    </pre>
+                                    <br><hr><br>
+                                    <h4 class="subheading">Statistics and Initial Visualizations</h4>
+                                    <p>When analyzing data, I think it's very important to run some statistics to help describe, show or summarize the data in a meaningful way. Although descriptive statistics may provide information regarding a data set, they do not allow for conclusions to be made based on the data analysis but rather provide a description of the data being analyzed.</p>
+                                    <p>In the descriptive statistics, I can see that the average hourly earnings is $18,81, with the lowest being $2 (quite low, huh?) and the highest being $132,89. We also have lots of columns with binary data (or dummy variables). The ages in 2011 vary from 27 to 31 years old, among others.</p>
+                                    <pre class="prettyprint">df_data[['EARNINGS', 'S', 'EXP', 'HHINC97', 'JOBS', 'HOURS']].describe()</pre>
+                                    <p>Since the data has now 86 remaining columns with lots of them having values of 0 or 1, I decided to run the descriptive statistics only in a few columns that I considered relevant for the EARNINGS, and this was the results table:</p>
+                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/statistics.png" alt="..." />
+                                    <p>The table above shows that the mininum value for the dataset is 0 and the maximum is 132.89, which means that the data range is which can be considered wide and the data variability is also high. Also, by comparing the values of the mean and std columns, such as 14.56 and 2.77, I can see that the means are far from the standard deviations. That implies that data is far from the mean, decentralized (adds to the variability).</p>
+                                    <p>To visualize some parts of data, I plotted graphs in Plotly for the number of people against years of schooling, out-of-school work experience, earnings, and number of jobs the person had. For most of the plots, I decided to add the KDE line.</p>
+                                    <p>In statistics, Kernel Density Estimation (KDE) is a non-parametric way to estimate the probability density function of a random variable. The KDE basically shows an estimate of the underlying distribution.</p>
+                                    <pre class="prettyprint">
+# Sample of how the graphs were built
+sns.displot(df_data['EXP'],
+            bins=50,
+            aspect=2,
+            kde=True,
+            color='darkblue')
+plt.title(f'Total out-of-school work experience (years) as of the 2011 interview. Average: {(df_data.EXP.mean()):.2f}')
+plt.xlabel('Years of work experience')
+plt.ylabel('Nr. of Males/Females')
+plt.show()
+                                    </pre>
+                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/years-schooling.png" alt="..." />
+                                    <p>Most people went to school for either 12 (finished high school) or 16 (hold a bachelor's degree) years.</p>
+                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/out-of-school-exp.png" alt="..." />
+                                    <p>There is a spike in the number out-of-school work experience in 5 to 6 years mark.</p>
+                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/total-earnings.png" alt="..." />
+                                    <p>Most people earn between 10 and 20 dollars per hour. There are fewer and fewer people earning more the further up we go. </p>
+                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/number-jobs.png" alt="..." />
+                                    <p>The vast majority of people have had up to 8 different jobs, which seems accurate given the fact that the oldest person in the dataset is 31 years old. There are some people that have had more than 20 different jobs though, a very high number.</p>
+                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/educ-qualification.png" alt="..." />
+                                    <p>Approximately 39% of the people interviewed had only High School Diploma, and 30% had a Bachelor's Degree as of 2011. Only 4 people out of 1481 had a PHD degree.</p>
+                                    <br><hr><br>
+                                    <h4 class="subheading">Correlation Between Variables</h4>
+                                    <p>My intention with this project is to create a linear model to predict the earnings and to do that, I think it's a great idea to analyze the linear correlation between the variables. With that, I plotted a heatmap based on Pearson's correlation. For visualization purposes, I separated the heatmap in 2 with different parts of the data to try to find a relationship between the Earnings and the other variables in the dataset that could be useful for the model.</p>
+                                    <pre class="prettyprint">
+# Code for the heatmap
+df_data_split = df_data[['FEMALE', 'MALE', 'EARNINGS', 'S', 'EXP', 'EDUCPROF', \
+                         'EDUCPHD', 'EDUCMAST', 'EDUCBA', 'EDUCAA', 'EDUCHSD', \
+                         'EDUCGED', 'EDUCDO', 'BYEAR', 'SF', 'SM', 'SFR', \
+                         'SMR', 'HHINC97', 'JOBS', 'HOURS', 'TENURE', \
+                         'ASVABAR', 'ASVABWK', 'ASVABPC', 'ASVABMK', \
+                         'ASVABNO', 'ASVABCS']]
+
+correlation_matrix = df_data_split.corr(method='pearson')
+sns.set(rc = {'figure.figsize':(40,21)})
+sns.heatmap(correlation_matrix, annot=True)
+plt.title('Correlation Matrix for Numeric Features')
+plt.xlabel('Variables')
+plt.ylabel('Variables')
+plt.show()
+                                    </pre>
+                                    <p>The heatmap shows a correlation between the variables on each axis. Correlation ranges from -1 to +1, where values closer to zero means there is no linear trend between the two variables. The closer to 1 the correlation is the more positively correlated they are; a correlation closer to -1 is similar, but instead of both increasing one variable will decrease as the other increases. The diagonals are all 1 because those squares are correlating each variable to itself (so it's a perfect correlation). For the rest the larger the number and darker the color, the higher the correlation between the two variables.</p>
+                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/heatmap1.png" alt="..." />
+                                    <p>For this heatmap, I compared the earnings with the gender, the highest educational qualification, the year of birth, the years of schooling of the family (biological and/or residential parents, and siblings), the gross household income, the work-related variables, and the score on a component of the ASVAB battery. Just to clarify, the Armed Services Vocational Aptitude Battery (ASVAB) is a multiple-aptitude battery that measures developed abilities and helps predict future academic and occupational success in the military.</p>
+                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/heatmap2.png" alt="..." />
+                                    <p>This heatmap was created to compare the earnings with the category of employment, the marital status, the ethnicity, the household structure (in terms of parents), and the household location in 1997.</p>
+                                    <p>The earnings have a higher correlation with the years of schooling of the family and the score on a component of the ASVAB battery. To investigate further the correlation between the parameters, I selected a few variables from the heatmap and ran a Pair Plot to visualise all the relationships at the same time.</p>
+                                    <pre class="prettyprint">
+# Code for the pairplot
+data_pp = df_data[['EARNINGS', 'S', 'EXP', 'HHINC97', 'ASVABMK', 'ASVABAR', 'EDUCPROF']]
+sns.pairplot(data_pp)
+
+plt.show()
+                                    </pre>
+                                    <p>From the picture below, we can observe the variations in each plot. The plots are in matrix format where the row name represents x-axis and column name represents the y-axis. The main-diagonal subplots are the uni-variate histograms (distributions) for each attribute. From the plots, we notice that the two components of the ASVAB, ASVABMK (Mathematics Knowledge) and ASVABAR (Arithmetic Reasoning) are somewhat linear related, which makes sense given the fact that arithmetic is a branch of mathematics. </p>
+                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/pairplot.png" alt="..." />
+                                    <p>For the simple regression scenario, I've used a scatterplot of the dependent and independent variables to see if the shape of the points was close to a line. In this current scenario, I have three independent variables and one dependent variable. I decided to plot one scatterplot for each of the independent and dependent variables to see if there's a linear relationship between them. The Seaborn plot used is the <code>regplot</code> (regression plot). It is a scatterplot that already plots the scattered data along with the regression line.</p>
+                                    <pre class="prettyprint">
+# Code for the regplot
+variables = ['S', 'EXP', 'HHINC97']
+
+sns.set(rc = {'figure.figsize':(8,6)})
+sns.set_palette("husl")
+
+for var in variables:
+    plt.figure()
+    sns.regplot(x=var, y='EARNINGS', data=df_data).set(title=f'Regression plot of {var} and EARNINGS');
+                                    </pre>
+                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/regplot.jpg" alt="..." />
+                                    <p>When looking at the regplots, it seems the EXP (total out-of-school work experience) has a very weak negative linear relationship with EARNINGS. It also seems that the S (years of schooling) and HHINC97 (gross household income prior to 1997) have a weak positive linear relationship with EARNINGS.</p>
+                                    <p>Another important thing to notice in the regplots is that there are some points really far off from where most points concentrate, I was already expecting something like that after the big difference between the mean and std columns - those points might be data outliers and extreme values.</p>
+                                    <br><hr><br>
+                                    <h4 class="subheading">Simple Linear Regression</h4>
+                                    <p>Linear regression is a linear model, e.g. a model that assumes a linear relationship between the input variables (x) and the single output variable (y). More specifically, that <code>y</code> can be calculated from a linear combination of the input variables (x). With that in mind, I'll implement a Linear Regression algorithm with Python and the Scikit-Learn library! I'll start with a simpler linear regression and then expand onto multiple linear regression with the same dataset.</p>
+                                    <p>To create the model, I could simply feed the <code>X</code> and <code>y</code> data directly to the linear regression model, but if I use all the data at once, I won't have any data to test the model with numbers that it hasn't seen yet (i.e., out-of-sample data). Evaluate a model created is very important to get a better idea of its performance in the real world.</p>
+                                    <p>This splitting data process is easily achieved through the helper <code>train_test_split()</code> method, which accepts the X and y arrays, and a <code>test_size</code>. The <code>test_size</code> is the percentage of the overall data I used for testing the model. The <code>train_test_split</code> function shuffles the rows of the original data and then takes a proportion to make the training dataset and the rest for testing. I declared the <code>random_state</code> as 10. If I run <code>train_test_split</code> without declaring a <code>random_state</code>, the resulting split will (almost) always be different. The reason I set a random state is to tell the function to shuffle the data identically every time in order to make the results replicable. I split the data as 80% for training and 20% for testing the linear regression using the following code:</p>
+                                    <pre class="prettyprint">
+y = df_data['EARNINGS'].values.reshape(-1, 1)
+X = df_data['S'].values.reshape(-1, 1)
+
+X_train_l, X_test_l, y_train_l, y_test_l = train_test_split(X,
+                                                            y,
+                                                            test_size=0.2,
+                                                            random_state=10)
+                                    </pre>
+                                    <p>I am using a uni-variate regression, which is a regression with a single explanatory variable (the S). Explanatory variables are also referred to as features in machine learning terminology. Using the data on S, the linear regression estimates the best possible line to fit the EARNINGS. The Linear Regression formula to predict the Hourly Earnings in 2011 (EARNINGS) using Years of Schooling (S) has the following structure: $$ {EARNINGS = \theta _0 + \theta _1 S} $$</p>
+                                    <p>To find the best possible line, the regression will estimate the y-intercept ("theta zero") and the slope ("theta one"). The line's intercept on the y-axis tells us how much EARNING a person would make if the S was 0. The slope tells us how much extra EARNING we get for a 1-year increase in the S.</p>
+                                    <p>To start, I created a <code>LinearRegression</code> object that did the work. Then I had to fit the line to the data by using the <code>.fit()</code> method along with the <code>X_train</code> and <code>y_train</code> data. The fitting line is defined by the features and the intercept/slope. In fact, I inspected the intercept and slope by printing the <code>regression.intecept_</code> and <code>regression.coef_</code> attributes.</p>
+                                    <pre class="prettyprint">
+regression_l = LinearRegression()
+
+# Find the best-fit line
+regression_l.fit(X_train_l, y_train_l)
+
+# Theta 0 value
+print(regression_l.intercept_)
+
+# Theta 1 value
+print(regression_l.coef_)
+
+# R-squared
+print(regression_l.score(X_train_l, y_train_l))
+print(regression_l.score(X_test_l, y_test_l))
+                                    </pre>
+                                    <p>The results for the intercept/slope can be plugged into the previous formula: $$ {EARNINGS = 1.02890741 + 1.21917798 S} $$ This means that if the Years of Schooling (S) is 0, the estimated EARNINGS is $1.03/h. The slope tells that for every extra year in school (S), the person's earnings increase by $1.22. That means the higher the education, the higher is your hourly payment.</p>
+                                    <p>One measure of figuring out how well the model fits the data is by looking at a metric called r-squared. The r-squared for this model comes in at around 0.081 for the training data and 0.072 for the testing data. This means that the model explains about 8% of the variance in EARNINGS for the training data, which is a pretty low r-squared.</p>
+                                    <p>To make predictions, I used the <code>predict()</code> function. According to the model, 20 years of schooling would give you a return of $25.41/h.</p>
+                                    <pre class="prettyprint">
+earnings_l = regression_l.predict([[20]])
+print(earnings_l)
+                                    </pre>
+                                    <p>To check if it's a trustworthy model, I tested it with the data from the split data (train and test). I used the test data and compared the predicted with the actual results:</p>
+                                    <pre class="prettyprint">
+y_pred_l = regression_l.predict(X_test_l)
+df_preds_l = pd.DataFrame({'Actual': y_test_l.squeeze(), 'Predicted': y_pred_l.squeeze()})
+df_preds_l
+                                    </pre>
+                                    <p>The output looks like this:</p>
+                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/lprediction.png" alt="..." />
+                                    <p>After looking at the data, checking for a linear relationship, training and testing the model, it's time to understand how well it predicts by using some metrics. For regression models, three evaluation metrics are mainly used: Mean Absolute Error (MAE) - this metric gives a notion of the overall error for each prediction of the model; Mean Squared Error (MSE) - it's similar to the MAE metric, but it squares the absolute values of the errors; Root Mean Squared Error (RMSE) - it shows how much the data may vary. For all three evaluation metrics, the smaller (closer to 0) the better! For the metrics calculations, I used the following code:</p>
+                                    <pre class="prettyprint">
+mae_l = mean_absolute_error(y_test_l, y_pred_l)
+mse_l = mean_squared_error(y_test_l, y_pred_l)
+rmse_l = np.sqrt(mse_l)
+
+print(f'Mean absolute error: {mae_l:.2f}')
+print(f'Mean squared error: {mse_l:.2f}')
+print(f'Root mean squared error: {rmse_l:.2f}')
+                                    </pre>
+                                    <p>All of the errors are quite high - and the model is missing the actual value by 11.55 at most (lower or higher), which is pretty significant and the model is not very efficient.</p>
+                                    <br><hr><br>
+                                    <h4 class="subheading">Multivariable Linear Regression</h4>
+                                    <p>To try and make the model more accurate, I decided to run a multivariable regression. It's similar to the simple regression, but instead of using only one variable (S), I can predict the EARNINGS using many variables instead, and this is also a much more common scenario in real life, where many things can affect the EARNINGS result. The new formula for the Linear Regression to predict the Hourly Earnings in 2011 (EARNINGS) using Years of Schooling (S), Total Out-of-School Work Experience (EXP), and Gross Household Income prior to 1997 (HHINC97) is: $$ {EARNINGS = \theta _0 + \theta _1 S + \theta _2 EXP + \theta _3 HHINC97} $$</p>
+                                    <p>The results of the heatmap showed that the EARNINGS have a higher correlation with S, EXP, and ASVABMK (mathematic component of the ASVAB). I initially ran a multivariable regression with those 3 values, but the ASVABMK didn't increase the prediction of the model, so I decided to leave it out of the model and use the variables I assumed in the beginning of the project that would be more impactful when predicting the EARNINGS.</p>
+                                    <p>Following what has been done with the simple linear regression, after loading and exploring the data, I divided it into features and targets. The main difference is that now the features have 3 columns instead of one. After setting the X and y sets, I divided the data into train and test sets. I used the same <code>random_state</code> and separated 20% of the data for testing the model.</p>
+                                    <pre class="prettyprint">
+target = df_data['EARNINGS']
+features = df_data[['S', 'EXP', 'HHINC97']]
+
+X_train_m, X_test_m, y_train_m, y_test_m = train_test_split(features,
+                                                            target,
+                                                            test_size=0.2,
+                                                            random_state=10)
+                                    </pre>
+                                    <p>After splitting the data, I used the same steps as the simple linear regression: train the multiple regression model, use the <code>fit()</code> method of the <code>LinearRegression</code> class, and look at the intercept and at the coefficients of the features:</p>
+                                    <pre class="prettyprint">
+regression_m = LinearRegression()
+regression_m.fit(X_train_m, y_train_m)
+
+# Theta 0 value
+print(regression_m.intercept_)
+
+# Thetas 1, 2 and 3 values
+print(regression_m.coef_)
+
+# R-squared
+print(regression_m.score(X_train_m, y_train_m))
+print(regression_m.score(X_test_m, y_test_m))
+                                    </pre>
+                                    <p>The results for the intercept/slope can be plugged into the new formula: $$ {EARNINGS = -12.8078 + 1.6089 S + 0.9224 EXP + 0.00004 HHINC97} $$ For the linear regression, the model had 1 variable and 1 coefficient, now in the multiple linear regression model, it has 4 variables and 4 coefficients. Following the same interpretation of the coefficients of the linear regression, this means that for a unit increase in the years of schooling, there is an increase of 1.61 dollars in the hourly rate. Similarly, for a unit increase in out-of-school work experience, there is a 0.92 increase in EARNINGS; and for a unit increase in the gross household income prior to 1997, there is an increase of 0.00004 in EARNINGS.</p>
+                                    <p>The interpretation of the y-intercept is a bit different because it's a negative value this time. Literally, the result of -12.8078 means that if all the other variables are 0, the estimated EARNINGS -$12.81/h, which is clearly unrealistic. The reason is that the model is simply a straight line, and it's returning the best formula to create this line. Considering that it's not possible to have a negative earnings, it's important to be careful when interpreting a simple model too literally. After all, it's just an estimate and this estimate will be the most accurate on the chart where it has the most data points (rather than at the extreme left or right).</p>
+                                    <p>By looking at the coefficients dataframe, it's also clear that, according to the model, the HHINC97 is closer to 0, which means it has almost no impact in EARNINGS. While the S and EXP, with the coefficients of 1.6089 and 0.9224, respectively, have the biggest impact on the target prediction. The r-squared is now a bit higher, and it explains around 13% of the training data, compared to 8% for the simple regression, but it didn't change so much when compared with the testing data (8% for the simple and 9% for the multiple regression).</p>
+                                    <p>We can see how this result has a connection to what was showed in the correlation heatmap. The years of schooling had the strongest correlation, so it was expected that it could help explain the earnings. The second-strongest correlation in the heatmap was the ASVABMK (mathematic component of the ASVAB), but it didn't increase the EARNINGS, so I decided to leave it out of the model and use the variables I assumed before that would make more sense to predict the EARNINGS.</p>
+                                    <p>To understand if and how the model is making mistakes, I followed the same steps to predict the EARNINGS using the test data and then look at the metrics to be able to tell how well the model is behaving:</p>
+                                    <pre class="prettyprint">
+y_pred_m = regression_m.predict(X_test_m)
+results = pd.DataFrame({'Actual': y_test_m, 'Predicted': y_pred_m})
+print(results)
+                                    </pre>
+                                    <p>The output looks like this:</p>
+                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/mprediction.png" alt="..." />
+                                    <p>Here, it's showing the index of the row of each test data, a column for its actual value and another for its predicted values. There are some differences between the actual and predicted values, such as between 18.18 and 29.28, which is -11.10, or between 17.51 and 16.29, that is 1.22. It's notable the distance between some values, but to determine if this distance is significant, evaluating the performance of the multiple linear regression is necessary. To do that, I calculated the MAE, MSE and RMSE metrics:</p>
+                                    <pre class="prettyprint">
+mae_m = mean_absolute_error(y_test_m, y_pred_m)
+mse_m = mean_squared_error(y_test_m, y_pred_m)
+rmse_m = np.sqrt(mse_m)
+
+print(f'Mean absolute error: {mae_m:.2f}')
+print(f'Mean squared error: {mse_m:.2f}')
+print(f'Root mean squared error: {rmse_m:.2f}')
+                                    </pre>
+                                    <p>The output of the metrics are:</p>
+                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/statmetrics.png" alt="..." />
+                                    <p>It's very similar to the output obtained with the simple regression, which means that the multiple regression, in this case, didn't improve the EARNINGS prediction. The value of the RMSE is 11.43, which means that the model might get its prediction wrong by adding or subtracting up to 11.43 from the actual value. It would be better to have this error closer to 0, and 11.43 is a big number, which indicates that the linear regression is not a good fit for this type of prediction, as expected.</p>
+                                    <p>How good the regression is also depends on the residuals - the difference between the model's predictions (𝑦̂𝑖) and the true values (𝑦𝑖) inside y_train. The reason why it's good to evaluate the residuals is to check if they look random because the residuals represent the errors of the model. If there's a pattern in the errors, then the model has a systematic bias. To check the residuals, I used the following code:</p>
+                                    <pre class="prettyprint">
+predicted_values = regression_m.predict(X_train_m)
+residuals = (y_train_m - predicted_values)
+
+# Original Regression of Actual vs. Predicted Earnings
+plt.figure(dpi=80)
+plt.scatter(x=y_train_m, y=predicted_values, c='indigo', alpha=0.6)
+plt.plot(y_train_m, y_train_m, color='cyan')
+plt.title(f'Actual vs Predicted Earnings: $y _i$ vs $\hat y_i$', fontsize=17)
+plt.xlabel('Actual Earnings (by Hour) $y _i$', fontsize=14)
+plt.ylabel('Prediced Earnings (by Hour) $\hat y _i$', fontsize=14)
+plt.show()
+
+# Residuals vs Predicted Earnings
+plt.figure(dpi=80)
+plt.scatter(x=predicted_values, y=residuals, c='indigo', alpha=0.6)
+plt.title('Residuals vs Predicted Earnings', fontsize=17)
+plt.xlabel('Predicted Earnings (by Hour) $\hat y _i$', fontsize=14)
+plt.ylabel('Residuals', fontsize=14)
+plt.show()
+                                    </pre>
+                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/earnings-model.jpg" alt="..." />
+                                    <p>The cyan line in the middle shows y_train against predicted_values. If the predictions had been 100% accurate then all the dots would be on this line. The further away the dots are from the line, the worse the prediction was. The second plot should be the residuals against the predicted prices.</p>
+                                    <br><hr><br>
+                                    <h4 class="subheading">Experiment and Investigate Further</h4>
+                                    <p>I decided to analyse the distribution of the residuals. In particular, I'm interested in the skew and the mean. In an ideal case, the distribution is something close to a normal distribution. A normal distribution has a skewness of 0 and a mean of 0. A skew of 0 means that the distribution is symmetrical - the bell curve is not lopsided or biased to one side. </p>
+                                    <pre class="prettyprint">
+# Residual Distribution Chart
+resid_mean = round(residuals.mean(), 2)
+resid_skew = round(residuals.skew(), 2)
+
+sns.displot(residuals, kde=True, color='indigo', height=7)
+plt.title(f'Residuals Skew ({resid_skew}) Mean ({resid_mean})')
+plt.show()
+                                    </pre>
+                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/skewedgraph.png" alt="..." />
+                                    <p>For this case, the residuals have a skewness of 3.04, which could be improved a bit. To transform the results, I could either find a more appropriate model to predict the EARNINGS or transform the data and try to make it fit better with the linear model. To do that, I decided to investigate if the EARNINGS is a suitable candidate for a log transformation. The log transformation can be used to make highly skewed distributions less skewed. This can be valuable both for making patterns in the data more interpretable and for helping to meet the assumptions of inferential statistics.</p>
+                                    <p>To compare the data, I first plotted a graph and calculated the skew for the original data, and then I did the same thing for the log transformation using the following code:</p>
+                                    <pre class="prettyprint">
+y_log = np.log(df_data['EARNINGS'])
+sns.displot(y_log, kde=True, height=7)
+plt.title(f'Log Prices. Skew is {y_log.skew():.3}')
+plt.show()
+                                    </pre>
+                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/skewtransf.jpg" alt="..." />
+                                    <p>The original data (graph on the left) had a skew of 2.93, called right-skewed distribution. That’s because there is a long tail in the positive direction on the number line and to the right of the peak. The log EARNINGS, however, have a skew that's closer to zero. Perhaps using log prices will improve the regression's r-squared and the model's residuals, let's investigate further.</p>
+                                    <p>I could check that the linear model isn't the right fit for the data I have, so transforming the data using the log could make it more suitable for that. This is the graph of the log EARNINGS vs the actual EARNINGS:</p>
+                                    <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/logvsoriginal.png" alt="..." />
+                                    <p>I used the same steps as before to run a second regression with the following formula $$ \log (EARNINGS) = \theta _0 + \theta _1 S + \theta _2 EXP + \theta_3 HHINC97 $$ The r-squared for the log transformed data is now 0.17 compared to the old 0.13. This is a good improvement, but I decided to not continue with the other steps (evaluate coefficients, analyzing the residuals, compare out-of-sample perfomance, etc.). This is the code used for the log-transformed regression: </p>
+                                    <pre class="prettyprint">
+# Use log EARNINGS
+new_target = np.log(df_data['EARNINGS'])
+features = df_data[['S', 'EXP', 'HHINC97']]
+
+X_train_log, X_test_log, log_y_train, log_y_test = train_test_split(features,
+                                                                    new_target,
+                                                                    test_size=0.2,
+                                                                    random_state=10)
+
+log_regr = LinearRegression()
+log_regr.fit(X_train_log, log_y_train)
+log_rsquared = log_regr.score(X_train_log, log_y_train)
+
+log_predictions = log_regr.predict(X_train_log)
+log_residuals = (log_y_train - log_predictions)
+
+print(f'Training data r-squared: {log_rsquared:.2}')
+                                    </pre>
+                                    <p>As a conclusion for this project, I have that I've made the assumption that the data had a linear relationship, but that might not be the case. Visualizing the data using boxplots, understanding the data distribution, treating the outliers, and normalizing it may help with that. Also, to have a better linear fit for this data, I might need other or more features that have stronger relationships with values I was trying to predict.</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Client:</strong>
-                                            TBD
+                                            Personal Project
                                         </li>
                                         <li>
                                             <strong>Category:</strong>
-                                            TBD
+                                            Machine Learning, Data Analysis, Statistics, Python
                                         </li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
@@ -678,10 +1034,6 @@ $line++
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="static/js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
