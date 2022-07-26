@@ -11547,6 +11547,10 @@ header.masthead .masthead-heading {
   opacity: 0.3;
 }
 
+.prettyprint {
+  text-align: left;
+}
+
 .timeline {
   position: relative;
   padding: 0;
